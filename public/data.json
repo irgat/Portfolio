@@ -1,0 +1,349 @@
+{
+  "labels": {
+    "about": "ABOUT",
+    "clients": "CLIENTS",
+    "projects": "PROJECTS",
+    "contact": "CONTACT"
+  },
+  "content": {
+    "fullName": "Forename Surname",
+    "title": "Title",
+    "email": "local-part@domain",
+    "mobile": "XXXXX XXXXXX",
+    "about": "<p>Cras ac lectus sit amet dui pharetra vulputate et sit amet augue. Cras ac nibh accumsan.</p><p>Ngilla metus ultrices, dictum massa. Nulla ut magna vitae enim malesuada euismod. Curabitur se.</p><p>Drerat quis mi gravida sollicitudin id vel ex. Donec tincidunt fringillat suspendissefe.</p><p>Ante, maximus vulputate lectus tristique at. Duis magna sem, tempus port.</p><p>Tristique elit. Donec vel est turpis. Praesent placeratul.</p><p>Sto gravida nec. Praesent interdum erat odio, eget placerat nisi ultrices vel hendreritmet.</p>",
+    "clients": [
+      {
+        "name": "Mobile Five",
+        "location": "London, UK",
+        "thumbnail": "images/clients/mobile-five.jpg",
+        "url": "https://www.mobile-5.com",
+        "target": "_blank",
+        "projects": [
+          {
+            "name": "PrePay Show",
+            "keywords": "ES6, React, Redux, PixiJS, WebGL",
+            "brand": "Orange Romania",
+            "thumbnail": "images/brands/orange.jpg",
+            "url": "",
+            "target": "",
+            "images": [
+              "images/projects/mobile-five/pre-pay-show-01.jpg",
+              "images/projects/mobile-five/pre-pay-show-02.jpg",
+              "images/projects/mobile-five/pre-pay-show-03.jpg",
+              "images/projects/mobile-five/pre-pay-show-04.jpg",
+              "images/projects/mobile-five/pre-pay-show-05.jpg",
+              "images/projects/mobile-five/pre-pay-show-06.jpg",
+              "images/projects/mobile-five/pre-pay-show-07.jpg",
+              "images/projects/mobile-five/pre-pay-show-08.jpg",
+              "images/projects/mobile-five/pre-pay-show-09.jpg",
+              "images/projects/mobile-five/pre-pay-show-10.jpg",
+              "images/projects/mobile-five/pre-pay-show-11.jpg",
+              "images/projects/mobile-five/pre-pay-show-12.jpg",
+              "images/projects/mobile-five/pre-pay-show-13.jpg",
+              "images/projects/mobile-five/pre-pay-show-14.jpg",
+              "images/projects/mobile-five/pre-pay-show-15.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Goodboy Digital",
+        "location": "London, UK",
+        "thumbnail": "images/clients/goodboy.jpg",
+        "url": "https://www.goodboydigital.com",
+        "target": "_blank",
+        "projects": [
+          {
+            "name": "Toon Cup 2016",
+            "keywords": "JavaScript, Pixi.js, WebGL",
+            "brand": "Cartoon Network",
+            "thumbnail": "images/brands/cartoon-network.jpg",
+            "url": "https://www.cartoonnetwork.co.uk/games/gumball-toon-cup-2016",
+            "target": "_blank",
+            "images": [
+              "images/projects/goodboy/toon-cup-1.jpg",
+              "images/projects/goodboy/toon-cup-2.jpg",
+              "images/projects/goodboy/toon-cup-3.jpg",
+              "images/projects/goodboy/toon-cup-4.jpg",
+              "images/projects/goodboy/toon-cup-5.jpg",
+              "images/projects/goodboy/toon-cup-6.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Grand Visual",
+        "location": "London, UK",
+        "thumbnail": "images/clients/grand-visual.jpg",
+        "url": "https://www.grandvisual.com",
+        "target": "_blank",
+        "projects": [
+          {
+            "name": "City Surfers",
+            "keywords": "ActionScript, Flex",
+            "brand": "Canon",
+            "thumbnail": "images/brands/canon.jpg",
+            "url": "https://grandvisual.com/canon-rides-the-waves-with-pan-european-campaign",
+            "target": "_blank",
+            "images": [
+              "images/projects/grand-visual/city-surfers-1.jpg",
+              "images/projects/grand-visual/city-surfers-2.jpg",
+              "images/projects/grand-visual/city-surfers-3.jpg"
+            ]
+          },
+          {
+            "name": "Cadvent",
+            "keywords": "ActionScript, Flex",
+            "brand": "Cadbury",
+            "thumbnail": "images/brands/cadbury.jpg",
+            "url": "https://grandvisual.com/cadbury-supports-biggest-ever-christmas-campaign-dooh",
+            "target": "_blank",
+            "images": [
+              "images/projects/grand-visual/cadvent-1.jpg",
+              "images/projects/grand-visual/cadvent-2.jpg",
+              "images/projects/grand-visual/cadvent-3.jpg"
+            ]
+          },
+          {
+            "name": "Friends",
+            "keywords": "Python, ActionScript, Flash",
+            "brand": "Facebook",
+            "thumbnail": "images/brands/facebook.jpg",
+            "url": "https://vimeo.com/149279495",
+            "target": "_blank",
+            "images": [
+              "images/projects/grand-visual/friends-1.jpg",
+              "images/projects/grand-visual/friends-2.jpg",
+              "images/projects/grand-visual/friends-3.jpg"
+            ]
+          },
+          {
+            "name": "Find Your Happy",
+            "keywords": "ActionScript, Flash",
+            "brand": "Rightmove",
+            "thumbnail": "images/brands/rightmove.jpg",
+            "url": "https://grandvisual.com/digital-out-of-home-helping-commuters-find-their-happy",
+            "target": "_blank",
+            "images": [
+              "images/projects/grand-visual/find-your-happy-1.jpg",
+              "images/projects/grand-visual/find-your-happy-2.jpg",
+              "images/projects/grand-visual/find-your-happy-3.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "waste creative",
+        "location": "London, UK",
+        "thumbnail": "images/clients/waste-creative.jpg",
+        "url": "https://www.waste-creative.com",
+        "target": "_blank",
+        "projects": [
+          {
+            "name": "Finn & Jake's Big Adventure",
+            "keywords": "JavaScript, Pixi.js, WebGL",
+            "brand": "Adventure Time",
+            "thumbnail": "images/brands/adventure-time.jpg",
+            "url": "https://adventuretime.cartoonnetwork.co.uk",
+            "target": "_blank",
+            "images": [
+              "images/projects/waste-creative/adventure-time-1.jpg",
+              "images/projects/waste-creative/adventure-time-2.jpg",
+              "images/projects/waste-creative/adventure-time-3.jpg"
+            ]
+          },
+          {
+            "name": "Drive Map",
+            "keywords": "JavaScript, Google Maps API",
+            "brand": "Aviva",
+            "thumbnail": "images/brands/aviva.jpg",
+            "url": "",
+            "target": "",
+            "images": [
+              "images/projects/waste-creative/drive-map-1.jpg",
+              "images/projects/waste-creative/drive-map-2.jpg",
+              "images/projects/waste-creative/drive-map-3.jpg"
+            ]
+          },
+          {
+            "name": "Middle-earth: Shadow of Mordor",
+            "keywords": "ActionScript, Flash",
+            "brand": "Warner Bros.",
+            "thumbnail": "images/brands/warner-bros.jpg",
+            "url": "",
+            "target": "",
+            "images": [
+              "images/projects/waste-creative/shadow-of-mordor-1.jpg",
+              "images/projects/waste-creative/shadow-of-mordor-2.jpg",
+              "images/projects/waste-creative/shadow-of-mordor-3.jpg",
+              "images/projects/waste-creative/shadow-of-mordor-4.jpg",
+              "images/projects/waste-creative/shadow-of-mordor-5.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Peak Games",
+        "location": "Istanbul, TR",
+        "thumbnail": "images/clients/peak-games.jpg",
+        "url": "https://peak.games",
+        "target": "_blank",
+        "projects": [
+          {
+            "name": "Tavla Plus",
+            "keywords": "ActionScript, Flash",
+            "brand": "",
+            "thumbnail": "images/brands/tavla-plus.jpg",
+            "url": "https://apps.facebook.com/tavlaplus",
+            "target": "_blank",
+            "images": [
+              "images/projects/peak-games/tavla-plus-1.jpg",
+              "images/projects/peak-games/tavla-plus-2.jpg"
+            ]
+          },
+          {
+            "name": "Okey Plus",
+            "keywords": "ActionScript, Flex",
+            "brand": "",
+            "thumbnail": "images/brands/okey-plus.jpg",
+            "url": "https://apps.facebook.com/okeyplus",
+            "target": "_blank",
+            "images": [
+              "images/projects/peak-games/okey-plus-1.jpg",
+              "images/projects/peak-games/okey-plus-2.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "MagiClick",
+        "location": "Istanbul, TR",
+        "thumbnail": "images/clients/magiclick.jpg",
+        "url": "https://magiclick.com",
+        "target": "_blank",
+        "projects": [
+          {
+            "name": "Herkes Ersin Muradina",
+            "keywords": "ActionScript, Flash",
+            "brand": "Danino",
+            "thumbnail": "images/brands/danino.jpg",
+            "url": "https://vimeo.com/37582762",
+            "target": "_blank",
+            "images": [
+              "images/projects/magiclick/herkes-ersin-muradina-1.jpg",
+              "images/projects/magiclick/herkes-ersin-muradina-2.jpg",
+              "images/projects/magiclick/herkes-ersin-muradina-3.jpg",
+              "images/projects/magiclick/herkes-ersin-muradina-4.jpg"
+            ]
+          },
+          {
+            "name": "Internet Banking",
+            "keywords": "ActionScript, Flash",
+            "brand": "Deniz Bank",
+            "thumbnail": "images/brands/deniz-bank.jpg",
+            "url": "https://acikdeniz.denizbank.com/login.aspx?lang=EN",
+            "target": "_blank",
+            "images": [
+              "images/projects/magiclick/internet-banking-1.jpg",
+              "images/projects/magiclick/internet-banking-2.jpg"
+            ]
+          },
+          {
+            "name": "Bring Your Difference",
+            "keywords": "ActionScript, Flash",
+            "brand": "British American Tobacco",
+            "thumbnail": "images/brands/british-american-tobacco.jpg",
+            "url": "",
+            "target": "",
+            "images": [
+              "images/projects/magiclick/bring-your-difference-1.jpg",
+              "images/projects/magiclick/bring-your-difference-2.jpg",
+              "images/projects/magiclick/bring-your-difference-3.jpg"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Hobby Projects",
+        "location": "",
+        "thumbnail": "images/clients/estelio.jpg",
+        "url": "",
+        "target": "",
+        "projects": [
+          {
+            "name": "Solo Test",
+            "keywords": "C++, Xcode, Marmalade SDK",
+            "brand": "",
+            "thumbnail": "images/brands/solo-test.jpg",
+            "url": "https://appworld.blackberry.com/webstore/content/22727000",
+            "target": "_blank",
+            "images": [
+              "images/projects/estelio/solo-test-1.jpg",
+              "images/projects/estelio/solo-test-2.jpg",
+              "images/projects/estelio/solo-test-3.jpg",
+              "images/projects/estelio/solo-test-4.jpg"
+            ]
+          }
+        ]
+      }
+    ],
+    "social": {
+      "header": [
+        {
+          "imagePath": "images/social/visual-cv.png",
+          "url": "https://www.visualcv.com/hasimkaraman",
+          "target": "_blank"
+        },
+        {
+          "imagePath": "images/social/git-hub.png",
+          "url": "https://www.github.com/irgat",
+          "target": "_blank"
+        },
+        {
+          "imagePath": "images/social/yuno-juno.png",
+          "url": "https://uk.yunojuno.com/p/hasim-karaman",
+          "target": "_blank"
+        },
+        {
+          "imagePath": "images/social/linked-in.png",
+          "url": "https://www.linkedin.com/in/hasimkaraman",
+          "target": "_blank"
+        }
+      ],
+      "footer": [
+        {
+          "imagePath": "images/social/visual-cv-white.png",
+          "url": "https://www.visualcv.com/hasimkaraman",
+          "target": "_blank"
+        },
+        {
+          "imagePath": "images/social/git-hub-white.png",
+          "url": "https://www.github.com/irgat",
+          "target": "_blank"
+        },
+        {
+          "imagePath": "images/social/yuno-juno-white.png",
+          "url": "https://uk.yunojuno.com/p/hasim-karaman",
+          "target": "_blank"
+        },
+        {
+          "imagePath": "images/social/linked-in-white.png",
+          "url": "https://www.linkedin.com/in/hasimkaraman",
+          "target": "_blank"
+        }
+      ],
+      "donation": [
+        {
+          "imagePath": "images/social/kan-ver-white.png",
+          "url": "https://www.kanver.org",
+          "target": "_blank"
+        },
+        {
+          "imagePath": "images/social/give-blood-white.png",
+          "url": "https://www.blood.co.uk",
+          "target": "_blank"
+        }
+      ]
+    }
+  }
+}
