@@ -1,4 +1,5 @@
 import React from 'react';
+import DocumentTitle from 'react-document-title';
 
 class App extends React.Component {
     constructor(props) {
@@ -43,54 +44,56 @@ class App extends React.Component {
             let content = this.data.content;
 
             return (
-                <div>
-                    {/* social bar */}
+                <DocumentTitle title={content.fullName}>
                     <div>
-                        <p>[Social Bar]</p>
-                    </div>
-
-                    {/* header */}
-                    <div>
-                        <p>{content.fullName}</p>
-                        <p>{content.title}</p>
-                    </div>
-
-                    {/* seperator */}
-                    <div>{labels.about}</div>
-
-                    {/* about */}
-                    <div dangerouslySetInnerHTML={{ __html: content.about }} />
-
-                    {/* seperator */}
-                    <div>{labels.clients}</div>
-
-                    {/* client list */}
-                    <div>
-                        <p>[Client List]</p>
-                    </div>
-
-                    {/* seperator */}
-                    <div>{labels.contact}</div>
-
-                    {/* footer */}
-                    <div>
-                        {/* contact */}
-                        <div>
-                            <p>{content.email}</p>
-                            <p>{content.mobile}</p>
-                        </div>
-
                         {/* social bar */}
                         <div>
                             <p>[Social Bar]</p>
                         </div>
 
-                        {/* donation bar */}
+                        {/* header */}
                         <div>
-                            <p>[Donation Bar]</p>
+                            <p>{content.fullName}</p>
+                            <p>{content.title}</p>
+                        </div>
+
+                        {/* seperator */}
+                        <div>{labels.about}</div>
+
+                        {/* about */}
+                        <div dangerouslySetInnerHTML={{ __html: content.about }} />
+
+                        {/* seperator */}
+                        <div>{labels.clients}</div>
+
+                        {/* client list */}
+                        <div>
+                            <p>[Client List]</p>
+                        </div>
+
+                        {/* seperator */}
+                        <div>{labels.contact}</div>
+
+                        {/* footer */}
+                        <div>
+                            {/* contact */}
+                            <div>
+                                <p>{content.email}</p>
+                                <p>{content.mobile}</p>
+                            </div>
+
+                            {/* social bar */}
+                            <div>
+                                <p>[Social Bar]</p>
+                            </div>
+
+                            {/* donation bar */}
+                            <div>
+                                <p>[Donation Bar]</p>
+                            </div>
                         </div>
                     </div>
-                </div>
+                </DocumentTitle>
             );
         }
     }
