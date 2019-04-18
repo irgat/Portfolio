@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Icon /> renders a <li> 1`] = `
+Array [
+  <li>
+    <a
+      href="#"
+      target="_self"
+    >
+      <img
+        alt=""
+        src="folderName/fileName.ext"
+      />
+    </a>
+  </li>,
+]
+`;
+
+exports[`<Icon /> renders a <li> 2`] = `
+Array [
+  <li>
+    <a
+      href="https://www.w3.org"
+      target="_self"
+    >
+      <img
+        alt=""
+        src="folderName/fileName.ext"
+      />
+    </a>
+  </li>,
+]
+`;
+
+exports[`<Icon /> renders a <li> 3`] = `
+Array [
+  <li>
+    <a
+      href="https://www.w3.org"
+      target="_blank"
+    >
+      <img
+        alt=""
+        src="folderName/fileName.ext"
+      />
+    </a>
+  </li>,
+]
+`;
+
+exports[`<Icon /> renders a <li> 4`] = `
+Array [
+  <li>
+    <a
+      href="#"
+      target="_blank"
+    >
+      <img
+        alt=""
+        src="folderName/fileName.ext"
+      />
+    </a>
+  </li>,
+]
+`;

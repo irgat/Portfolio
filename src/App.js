@@ -1,5 +1,6 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title';
+import SocialBar from './components/SocialBar';
 
 class App extends React.Component {
     constructor(props) {
@@ -45,53 +46,37 @@ class App extends React.Component {
 
             return (
                 <DocumentTitle title={content.fullName}>
-                    <div>
-                        {/* social bar */}
-                        <div>
-                            <p>[Social Bar]</p>
-                        </div>
+                    <div style={{ 'backgroundColor': 'green' }}>
+                        <header>
+                            <SocialBar items={content.social.header} />
+                            <h1>{content.fullName}</h1>
+                            <h2>{content.title}</h2>
+                        </header>
 
-                        {/* header */}
-                        <div>
-                            <p>{content.fullName}</p>
-                            <p>{content.title}</p>
-                        </div>
+                        <main>
+                            {/* seperator */}
+                            <h3>{labels.about}</h3>
 
-                        {/* seperator */}
-                        <div>{labels.about}</div>
+                            {/* about */}
+                            <div dangerouslySetInnerHTML={{ __html: content.about }} />
 
-                        {/* about */}
-                        <div dangerouslySetInnerHTML={{ __html: content.about }} />
+                            {/* seperator */}
+                            <h3>{labels.clients}</h3>
 
-                        {/* seperator */}
-                        <div>{labels.clients}</div>
-
-                        {/* client list */}
-                        <div>
-                            <p>[Client List]</p>
-                        </div>
-
-                        {/* seperator */}
-                        <div>{labels.contact}</div>
-
-                        {/* footer */}
-                        <div>
-                            {/* contact */}
+                            {/* client list */}
                             <div>
-                                <p>{content.email}</p>
-                                <p>{content.mobile}</p>
+                                <p>[Client List]</p>
                             </div>
+                        </main>
 
-                            {/* social bar */}
-                            <div>
-                                <p>[Social Bar]</p>
-                            </div>
-
-                            {/* donation bar */}
-                            <div>
-                                <p>[Donation Bar]</p>
-                            </div>
-                        </div>
+                        <footer>
+                            {/* seperator */}
+                            <h3>{labels.contact}</h3>
+                            <p>{content.email}</p>
+                            <p>{content.mobile}</p>
+                            <SocialBar items={content.social.footer} />
+                            <SocialBar items={content.social.donation} />
+                        </footer>
                     </div>
                 </DocumentTitle>
             );
