@@ -1,6 +1,7 @@
 import React from 'react';
 import DocumentTitle from 'react-document-title';
 import SocialBar from './components/SocialBar';
+import Separator from './components/Separator';
 
 class App extends React.Component {
     constructor(props) {
@@ -54,14 +55,12 @@ class App extends React.Component {
                         </header>
 
                         <main>
-                            {/* seperator */}
-                            <h3>{labels.about}</h3>
+                            <Separator label={labels.about} />
 
                             {/* about */}
                             <div dangerouslySetInnerHTML={{ __html: content.about }} />
 
-                            {/* seperator */}
-                            <h3>{labels.clients}</h3>
+                            <Separator label={labels.clients} />
 
                             {/* client list */}
                             <div>
@@ -70,8 +69,7 @@ class App extends React.Component {
                         </main>
 
                         <footer>
-                            {/* seperator */}
-                            <h3>{labels.contact}</h3>
+                            <Separator label={labels.contact} />
                             <p>{content.email}</p>
                             <p>{content.mobile}</p>
                             <SocialBar items={content.social.footer} />
