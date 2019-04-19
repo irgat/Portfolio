@@ -11,8 +11,8 @@ const propTypes = {
 };
 
 const defaultProps = {
-    onMouseOver: () => { },
-    onMouseOut: () => { },
+    onMouseOver: undefined,
+    onMouseOut: undefined,
 };
 
 const Item = (props) => {

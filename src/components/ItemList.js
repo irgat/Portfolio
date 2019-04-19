@@ -13,6 +13,14 @@ const defaultProps = {
 };
 
 class ItemList extends React.Component {
+    onMouseOver = (e) => {
+        console.log('onMouseOver:', e.target.id);
+    };
+
+    onMouseOut = (e) => {
+        console.log('onMouseOut:', e.target.id);
+    };
+
     filterValidItems = (items) => {
         return items.filter(item => (item.thumbnail !== undefined && item.name !== undefined));
     };
@@ -28,8 +36,8 @@ class ItemList extends React.Component {
                         imagePath={item.thumbnail}
                         isSelected={item.name === this.props.selectedItem}
                         onClick={this.props.onClick}
-                        onMouseOver={(item.name !== this.props.selectedItem) ? this.onMouseOver : null}
-                        onMouseOut={(item.name !== this.props.selectedItem) ? this.onMouseOut : null}
+                        onMouseOver={(item.name !== this.props.selectedItem) ? this.onMouseOver : undefined}
+                        onMouseOut={(item.name !== this.props.selectedItem) ? this.onMouseOut : undefined}
                     />
                 ))}
             </div>

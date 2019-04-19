@@ -16,8 +16,6 @@ Array [
       imagePath="folderName/fileName.ext"
       isSelected={true}
       onClick={[MockFunction]}
-      onMouseOut={null}
-      onMouseOver={null}
     />
   </div>,
 ]

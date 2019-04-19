@@ -6,7 +6,7 @@ const propTypes = {
 };
 
 const defaultProps = {
-    label: null,
+    label: undefined,
 };
 
 const Separator = (props) => {

@@ -6,8 +6,6 @@ Array [
     alt=""
     id="#"
     onClick={[MockFunction]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
     src="folderName/fileName.ext"
   />,
 ]
@@ -19,8 +17,6 @@ Array [
     alt=""
     id="##"
     onClick={[MockFunction]}
-    onMouseOut={[Function]}
-    onMouseOver={[Function]}
     src="folderName/fileName.ext"
   />,
 ]
