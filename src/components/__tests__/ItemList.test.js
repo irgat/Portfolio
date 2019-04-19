@@ -7,7 +7,6 @@ const invalidList = [
     { key: 'value' },
     { thumbnail: 'folderName/fileName.ext' },
     { name: '#' },
-
 ];
 
 const mixedList = [

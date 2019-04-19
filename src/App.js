@@ -3,6 +3,7 @@ import DocumentTitle from 'react-document-title';
 import SocialBar from './components/SocialBar';
 import Separator from './components/Separator';
 import ItemList from './components/ItemList';
+import Contact from './components/Contact';
 
 class App extends React.Component {
     constructor(props) {
@@ -112,8 +113,8 @@ class App extends React.Component {
 
                         <footer>
                             <Separator label={labels.contact} />
-                            <p>{content.email}</p>
-                            <p>{content.mobile}</p>
+                            {(content.email && typeof content.email === 'string') && <Contact mailto={content.email} />}
+                            {(content.tel && typeof content.tel === 'string') && <Contact tel={content.tel} />}
                             <SocialBar items={content.social.footer} />
                             <SocialBar items={content.social.donation} />
                         </footer>
