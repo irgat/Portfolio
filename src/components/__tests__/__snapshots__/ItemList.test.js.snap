@@ -1,0 +1,38 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ItemList /> <div /> receives 6 item(s), renders 2 valid <Item />(s) 1`] = `
+Array [
+  <div>
+    <Item
+      id="#"
+      imagePath="folderName/fileName.ext"
+      isSelected={false}
+      onClick={[MockFunction]}
+      onMouseOut={[Function]}
+      onMouseOver={[Function]}
+    />
+    <Item
+      id="##"
+      imagePath="folderName/fileName.ext"
+      isSelected={true}
+      onClick={[MockFunction]}
+    />
+  </div>,
+]
+`;
+
+exports[`<ItemList /> filterValidItems() returns 2 items 1`] = `
+Array [
+  Object {
+    "name": "#",
+    "thumbnail": "folderName/fileName.ext",
+  },
+  Object {
+    "key": "value",
+    "name": "##",
+    "thumbnail": "folderName/fileName.ext",
+  },
+]
+`;
+
+exports[`<ItemList /> returns null when there is no valid items 1`] = `Array []`;

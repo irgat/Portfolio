@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Separator /> renders a <h3> 1`] = `
+Array [
+  <h3 />,
+]
+`;
+
+exports[`<Separator /> renders a <h3> 2`] = `
+Array [
+  <h3 />,
+]
+`;
+
+exports[`<Separator /> renders a <h3> 3`] = `
+Array [
+  <h3>
+    copy
+  </h3>,
+]
+`;

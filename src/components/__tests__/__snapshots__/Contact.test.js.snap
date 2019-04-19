@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Contact /> renders an <a> 1`] = `
+Array [
+  <a
+    href="mailto:local-part@domain"
+  >
+    <p>
+      local-part@domain
+    </p>
+  </a>,
+]
+`;
+
+exports[`<Contact /> renders an <a> 2`] = `
+Array [
+  <a
+    href="tel:XXXXX XXXXXX"
+  >
+    <p>
+      XXXXX XXXXXX
+    </p>
+  </a>,
+]
+`;

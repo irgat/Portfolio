@@ -1,0 +1,51 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<SocialBar /> <ul /> receives 9 item(s), renders 4 valid <Icon />(s) 1`] = `
+Array [
+  <ul>
+    <Icon
+      imagePath="folderName/fileName.ext"
+      target="_self"
+      url="#"
+    />
+    <Icon
+      imagePath="folderName/fileName.ext"
+      target="_self"
+      url="https://www.w3.org"
+    />
+    <Icon
+      imagePath="folderName/fileName.ext"
+      target="_blank"
+      url="https://www.w3.org"
+    />
+    <Icon
+      imagePath="folderName/fileName.ext"
+      target="_blank"
+      url="#"
+    />
+  </ul>,
+]
+`;
+
+exports[`<SocialBar /> filterValidItems() returns 4 items 1`] = `
+Array [
+  Object {
+    "imagePath": "folderName/fileName.ext",
+  },
+  Object {
+    "imagePath": "folderName/fileName.ext",
+    "url": "https://www.w3.org",
+  },
+  Object {
+    "imagePath": "folderName/fileName.ext",
+    "target": "_blank",
+    "url": "https://www.w3.org",
+  },
+  Object {
+    "imagePath": "folderName/fileName.ext",
+    "target": "_blank",
+  },
+]
+`;
+
+exports[`<SocialBar /> returns null when there is no valid items 1`] = `Array []`;
