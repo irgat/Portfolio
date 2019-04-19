@@ -2,6 +2,7 @@ import React from 'react';
 import DocumentTitle from 'react-document-title';
 import SocialBar from './components/SocialBar';
 import Separator from './components/Separator';
+import ItemList from './components/ItemList';
 
 class App extends React.Component {
     constructor(props) {
@@ -11,7 +12,31 @@ class App extends React.Component {
 
         this.state = {
             dataLoaded: false,
+            clientId: -1,
+            projectId: -1,
         };
+
+        this.onClientSelected = this.onClientSelected.bind(this);
+        this.onProjectSelected = this.onProjectSelected.bind(this);
+    }
+
+    onClientSelected(e) {
+        let id = e.target.id;
+
+        //update state
+        this.setState(state => ({
+            clientId: state.clientId !== id ? id : -1,
+            projectId: -1,
+        }));
+    }
+
+    onProjectSelected(e) {
+        let id = e.target.id;
+
+        //update state
+        this.setState(state => ({
+            projectId: state.projectId !== id ? id : -1,
+        }));
     }
 
     componentWillMount() {
@@ -44,6 +69,8 @@ class App extends React.Component {
         } else {
             let labels = this.data.labels;
             let content = this.data.content;
+            let clientData = (this.state.clientId !== -1) && (content.clients.filter(item => item.name === this.state.clientId)[0]);
+            let projectData = (this.state.projectId !== -1) && (clientData.projects.filter(item => item.name === this.state.projectId)[0]);
 
             return (
                 <DocumentTitle title={content.fullName}>
@@ -60,12 +87,27 @@ class App extends React.Component {
                             {/* about */}
                             <div dangerouslySetInnerHTML={{ __html: content.about }} />
 
-                            <Separator label={labels.clients} />
-
                             {/* client list */}
-                            <div>
-                                <p>[Client List]</p>
-                            </div>
+                            <Separator label={labels.clients} />
+                            <ItemList
+                                items={content.clients}
+                                selectedItem={this.state.clientId.toString()}
+                                onClick={this.onClientSelected}
+                            />
+
+                            {/* project list */}
+                            {clientData && <Separator label={labels.projects} />}
+                            {clientData && <ItemList
+                                items={clientData.projects}
+                                selectedItem={this.state.projectId.toString()}
+                                onClick={this.onProjectSelected}
+                            />}
+
+                            {/* popup */}
+                            {projectData && <Separator label={projectData.name} />}
+                            {projectData && <div>
+                                {projectData.images.map(item => <img key={item} src={item} alt="" />)}
+                            </div>}
                         </main>
 
                         <footer>

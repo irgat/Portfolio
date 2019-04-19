@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Item /> renders an <img> 1`] = `
+Array [
+  <img
+    alt=""
+    id="#"
+    onClick={[MockFunction]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    src="folderName/fileName.ext"
+  />,
+]
+`;
+
+exports[`<Item /> renders an <img> 2`] = `
+Array [
+  <img
+    alt=""
+    id="##"
+    onClick={[MockFunction]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+    src="folderName/fileName.ext"
+  />,
+]
+`;
