@@ -77,9 +77,9 @@ class App extends React.Component {
 
             return (
                 <DocumentTitle title={content.fullName}>
+                    <React.Fragment>
                         <header>
                             <SocialBar items={content.social.header} />
-                    <React.Fragment>
                             <h1>{content.fullName}</h1>
                             <h2>{content.title}</h2>
                         </header>
