@@ -1,3 +1,5 @@
+import 'normalize.css';
+import './styles/App.scss';
 import React from 'react';
 import DocumentTitle from 'react-document-title';
 import SocialBar from './components/SocialBar';
@@ -75,9 +77,9 @@ class App extends React.Component {
 
             return (
                 <DocumentTitle title={content.fullName}>
-                    <div style={{ 'backgroundColor': 'green' }}>
                         <header>
                             <SocialBar items={content.social.header} />
+                    <React.Fragment>
                             <h1>{content.fullName}</h1>
                             <h2>{content.title}</h2>
                         </header>
@@ -118,7 +120,7 @@ class App extends React.Component {
                             <SocialBar items={content.social.footer} />
                             <SocialBar items={content.social.donation} />
                         </footer>
-                    </div>
+                    </React.Fragment>
                 </DocumentTitle>
             );
         }
