@@ -1,0 +1,13 @@
+@mixin custom-font(
+  $font-name: null,
+  $font-size: null,
+  $color: null,
+  $font-weight: null,
+  $font-style: null
+) {
+  font-style: $font-style;
+  font-weight: $font-weight;
+  font-size: $font-size;
+  font-family: $font-name, Helvetica, Arial, sans-serif;
+  color: $color;
+}

@@ -1,0 +1,34 @@
+$icon-small-size: 30px;
+$icon-big-size: 45px;
+
+@mixin icon-size($val) {
+  height: $val;
+}
+
+%icon-margin {
+  margin-right: 0.5em;
+
+  &:last-child() {
+    margin-right: 0;
+  }
+}
+
+.icon-small {
+  li {
+    @extend %icon-margin;
+    @include icon-size($icon-small-size);
+    img {
+      @include icon-size($icon-small-size);
+    }
+  }
+}
+
+.icon-big {
+  li {
+    @extend %icon-margin;
+    @include icon-size($icon-big-size);
+    img {
+      @include icon-size($icon-big-size);
+    }
+  }
+}

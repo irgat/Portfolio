@@ -1,0 +1,37 @@
+%base-typo {
+  margin: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  line-height: 150%;
+}
+
+body {
+  @include custom-font($open-sans-regular, 10px, $base-color);
+  background-color: $background-color;
+  text-align: center;
+}
+
+h1 {
+  @include custom-font($open-sans-bold, 9.4em);
+  @extend %base-typo;
+}
+
+h2 {
+  @include custom-font(
+    $open-sans-regular,
+    6.4em,
+    null,
+    $regular
+  ); //update font-weight to keep fallback fonts consistent
+  @extend %base-typo;
+}
+
+h3 {
+  @include custom-font($open-sans-bold, 2.4em);
+  @extend %base-typo;
+}
+
+p {
+  @extend %base-typo;
+  font-size: 1.6em;
+}
