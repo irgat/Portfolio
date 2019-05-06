@@ -78,8 +78,8 @@ class App extends React.Component {
             return (
                 <DocumentTitle title={content.fullName}>
                     <React.Fragment>
-                        <header>
-                            <SocialBar items={content.social.header} />
+                        <header className='header'>
+                            <SocialBar className='social-bar icon-small' items={content.social.header} />
                             <h1>{content.fullName}</h1>
                             <h2>{content.title}</h2>
                         </header>
@@ -113,12 +113,12 @@ class App extends React.Component {
                             </div>}
                         </main>
 
-                        <footer>
+                        <footer className='footer' >
                             <Separator label={labels.contact} />
                             {(content.email && typeof content.email === 'string') && <Contact mailto={content.email} />}
                             {(content.tel && typeof content.tel === 'string') && <Contact tel={content.tel} />}
-                            <SocialBar items={content.social.footer} />
-                            <SocialBar items={content.social.donation} />
+                            <SocialBar className='social-bar icon-small' items={content.social.footer} />
+                            <SocialBar className='social-bar icon-big' items={content.social.donation} />
                         </footer>
                     </React.Fragment>
                 </DocumentTitle>

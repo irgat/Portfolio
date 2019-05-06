@@ -4,10 +4,11 @@ import Icon from './Icon';
 
 const propTypes = {
     items: PropTypes.array.isRequired,
+    className: PropTypes.string,
 };
 
 const defaultProps = {
-
+    className: undefined,
 };
 
 class SocialBar extends React.Component {
@@ -18,7 +19,7 @@ class SocialBar extends React.Component {
     render() {
         let validItems = this.filterValidItems(this.props.items);
         return (
-            (validItems.length > 0) && <ul>
+            (validItems.length > 0) && <ul className={this.props.className}>
                 {validItems.map((item, id) => (
                     <Icon
                         key={id}
