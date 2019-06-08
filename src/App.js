@@ -14,9 +14,9 @@ super(props);
 this.data = {};
 
 this.state = {
-    dataLoaded: false,
+dataLoaded: false,
 clientId: -1,
-        projectId: -1,
+projectId: -1,
 };
 
 this.onClientSelected = this.onClientSelected.bind(this);
