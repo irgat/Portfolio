@@ -9,18 +9,18 @@ import Contact from './components/Contact';
 
 class App extends React.Component {
     constructor(props) {
-        super(props);
+super(props);
 
-        this.data = {};
+this.data = {};
 
-        this.state = {
-            dataLoaded: false,
-            clientId: -1,
-            projectId: -1,
-        };
+this.state = {
+dataLoaded: false,
+clientId: -1,
+projectId: -1,
+};
 
-        this.onClientSelected = this.onClientSelected.bind(this);
-        this.onProjectSelected = this.onProjectSelected.bind(this);
+this.onClientSelected = this.onClientSelected.bind(this);
+this.onProjectSelected = this.onProjectSelected.bind(this);
     }
 
     onClientSelected(e) {
